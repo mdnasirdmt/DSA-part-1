@@ -4,7 +4,7 @@ public class PalindromOrNotInteger {
 
 	public static void main(String[] args) {
 		
-		int n=1221;
+		int n=121;
 		
 		palindrom(n);
 		
