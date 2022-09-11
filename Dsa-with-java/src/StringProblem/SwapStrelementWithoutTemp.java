@@ -1,4 +1,4 @@
-package GeneralProblem;
+package StringProblem;
 
 public class SwapStrelementWithoutTemp {
 
