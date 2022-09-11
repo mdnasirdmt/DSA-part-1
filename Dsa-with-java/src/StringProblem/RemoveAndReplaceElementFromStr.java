@@ -1,6 +1,6 @@
 package StringProblem;
 
-public class RemoveElementFromStr {
+public class RemoveAndReplaceElementFromStr {
 
 	public static void main(String[] args) {
 
