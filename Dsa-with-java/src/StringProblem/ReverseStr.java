@@ -4,7 +4,7 @@ public class ReverseStr {
 
 	public static void main(String[] args) {
 		
-		String str= "qwerty";
+		String str= "qwerty keyword";
 		
 	String s=	reverseStr(str);
 	
