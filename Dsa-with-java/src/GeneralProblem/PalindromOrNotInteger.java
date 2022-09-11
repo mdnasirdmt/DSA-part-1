@@ -3,27 +3,27 @@ package GeneralProblem;
 public class PalindromOrNotInteger {
 
 	public static void main(String[] args) {
-		
-		int n=121;
-		
+
+		int n = 121;
+
 		palindrom(n);
-		
+
 	}
 
 	private static void palindrom(int n) {
-		
-		int n1=n, rem=0, num=0;
-		
-		while(n>0) {
-			
-			rem= n%10;
-			num=num*10+rem;
-			n=n/10;
+
+		int n1 = n, rem = 0, num = 0;
+
+		while (n > 0) {
+
+			rem = n % 10;
+			num = num * 10 + rem;
+			n = n / 10;
 		}
-		
-		if(n1==num) {
+
+		if (n1 == num) {
 			System.out.println("yes");
-		}else {
+		} else {
 			System.out.println("no");
 		}
 	}
