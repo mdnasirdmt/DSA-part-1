@@ -38,11 +38,13 @@ public class LinkedList {
 		llist.head = new Node(1);
 		Node second = new Node(2);
 		Node third = new Node(3);
+		Node frth= new Node(4);
 
 		llist.head.next = second; // Link first node with
 									// the second node
 		second.next = third; // Link second node with the third node
 
+		third.next=frth;
 		// Function call
         printList();
 	}
