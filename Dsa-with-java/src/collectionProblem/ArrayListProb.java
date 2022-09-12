@@ -28,11 +28,15 @@ public class ArrayListProb {
 		System.out.println(list.remove(7));
 		System.out.println(list.remove(0));
 		System.out.println(list);
-		int in=Collections.binarySearch(list, 51); // it works when list is sorted 
+		int in = Collections.binarySearch(list, 51); // it works when list is sorted
 		System.out.println(in);
-		
+
 		int index = Collections.binarySearch(list, 52, Collections.reverseOrder());
 		System.out.println(index);
+
+		// Printing elements one by one
+		for (int i = 0; i < list.size(); i++)
+			System.out.print(list.get(i) + " ");
 
 	}
 
