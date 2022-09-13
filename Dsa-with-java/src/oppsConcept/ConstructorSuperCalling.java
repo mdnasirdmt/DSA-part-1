@@ -27,6 +27,16 @@ class Labrador extends Dog {
 }
 
 /*
+ * output
+ * 
+ * Animal Constructor 
+ * Dog Constructor 
+ * Labrador Constructor
+ * 
+ * 
+ */
+
+/*
  * Is a super class constructor called even when there is no explicit call from
  * a sub class constructor? What will be the output of below program ?
  * 
