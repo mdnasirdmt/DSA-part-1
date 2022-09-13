@@ -10,6 +10,14 @@ public class SuperClass {
 		System.out.println("rectangle.length= " + rectangle.getLength());
 		System.out.println("rectangle.area= " + rectangle.getArea());
 
+		///////////
+		System.out.println();
+
+		Cuboid cuboid = new Cuboid(5, 5, 5);
+		System.out.println("cuboid.width= " + cuboid.getHeight());
+		System.out.println("cuboid.length= " + cuboid.getVolume());
+		System.out.println("cuboid.area= " + cuboid.getArea());
+
 	}
 }
 
@@ -19,7 +27,7 @@ class Rectangle1 {
 	double height;
 
 	public Rectangle1(double width, double height) {
-		super();
+
 		this.width = width;
 		this.height = height;
 	}
@@ -36,6 +44,27 @@ class Rectangle1 {
 	double getArea() {
 
 		return height * width;
+	}
+
+}
+
+class Cuboid extends Rectangle1 {
+
+	double length;
+
+	public Cuboid(double width, double height, double length) {
+		super(width, height);
+		this.length = length;
+	}
+
+	double getHeight() {
+		return height;
+
+	}
+
+	double getVolume() {
+		return height * length * width;
+
 	}
 
 }
