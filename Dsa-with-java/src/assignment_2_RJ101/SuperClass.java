@@ -1,4 +1,4 @@
-package oppsConcept;
+package assignment_2_RJ101;
 
 public class SuperClass {
 
