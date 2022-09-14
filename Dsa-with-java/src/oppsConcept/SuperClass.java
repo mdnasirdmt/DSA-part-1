@@ -13,7 +13,7 @@ public class SuperClass {
 		///////////
 		System.out.println();
 
-		Cuboid cuboid = new Cuboid(5, 5, 5);
+		Cuboid cuboid = new Cuboid(5, 10, 5);
 		System.out.println("cuboid.width= " + cuboid.getHeight());
 		System.out.println("cuboid.length= " + cuboid.getVolume());
 		System.out.println("cuboid.area= " + cuboid.getArea());

@@ -3,83 +3,81 @@ package oppsConcept;
 public class Abstaction_Oops_Shape {
 
 	public static void main(String[] args) {
-		Shape s1 = new Circle("Red", 2.2);
+		
+		Circle circle= new Circle("green", 5.0);
 
-		System.out.println(s1.toString());
 
 	}
 }
 
-abstract class Shape {
+	abstract class Shape {
 
-	String color;
+		String color;
 
-	// these are abstract methods
-	abstract double area();
+		// these are abstract methods
+		abstract double area();
 
-	public abstract String toString();
+		public abstract String toString();
 
-	// abstract class can have the constructor
-	public Shape(String color) {
-		System.out.println("Shape constructor called");
-		this.color = color;
+		// abstract class can have the constructor
+		public Shape(String color) {
+			this.color = color;
+			System.out.println("Shape constructor called");
+		}
+
+		// this is a concrete method
+		public String getColor() {
+			return color;
+		}
 	}
-
-	// this is a concrete method
-	public String getColor() {
-		return color;
-	}
-}
 //////
 
-class Circle extends Shape {
-	double radius;
+	class Circle extends Shape {
+		double radius;
 
-	public Circle(String color, double radius) {
 
-		// calling Shape constructor
-		super(color);
-		System.out.println("Circle constructor called");
-		this.radius = radius;
+		public Circle(String color, double radius) {
+			super(color);
+			this.radius = radius;
+			System.out.println("Circle constructor called");
+		}
+
+		@Override
+		double area() {
+			return Math.PI * Math.pow(radius, 2);
+		}
+
+		@Override
+		public String toString() {
+			return "Circle color is " + super.getColor() + "and area is : " + area();
+		}
 	}
-
-	@Override
-	double area() {
-		return Math.PI * Math.pow(radius, 2);
-	}
-
-	@Override
-	public String toString() {
-		return "Circle color is " + super.getColor() + "and area is : " + area();
-	}
-}
 
 //////
 
-class Rectangle extends Shape {
+	class Rectangle extends Shape {
 
-	double length;
-	double width;
+		double length;
+		double width;
 
-	public Rectangle(String color, double length, double width) {
-		// calling Shape constructor
-		super(color);
-		System.out.println("Rectangle constructor called");
-		this.length = length;
-		this.width = width;
-	}
+		public Rectangle(String color, double length, double width) {
+			super(color);
+			this.length = length;
+			this.width = width;
+			System.out.println("Rectangle constructor called");
+		}
 
-	@Override
-	double area() {
-		return length * width;
-	}
+		@Override
+		double area() {
+			return length * width;
+		}
 
 	@Override
 	public String toString() {
 		return "Rectangle color is " + super.getColor() + "and area is : " + area();
 	}
+	}
 
-}
 
 //////
 
