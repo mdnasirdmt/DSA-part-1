@@ -11,12 +11,14 @@ public class PrimeBetween {
 		int l=s.nextInt();
 		int e=s.nextInt();
 		
+		System.out.println("prime between  "+l+" to  "+e);
 		for(int i=l; i<=e; i++) {
 			
 		boolean b=	prime(i);
 		
+		
 		if(b)
-			System.out.println("it is prime "+ i);
+			System.out.print( i+" ");
 		}
 
 	}
