@@ -17,10 +17,17 @@ public class ListInterface {
 	        // Custom inputs
 	  
 	        l1.add(78);
+	        l1.add(80);
+	        l1.add(81);
+	        l1.add(82);
 	        l1.add(0, 1);
 	        l1.add(1, 2);
 	        l1.add(2, 79);
-	  
+	        l1.remove(2);
+	        
+	       System.out.println( l1.hashCode());
+	        
+	        
 	        // Print the elements inside the object
 	        System.out.println(l1);
 	  
@@ -28,17 +35,19 @@ public class ListInterface {
 	        // interface implemented ArrayList class
 	        // Declaring object of integer type
 	        List<Integer> l2 = new ArrayList<Integer>();
-	  
+	        
 	        // Again adding elements to object of List interface
 	        // Custom inputs
 	        l2.add(1);
 	        l2.add(2);
 	        l2.add(3);
 	        l2.add(5);
+	        System.out.println( l2.hashCode());
 	        System.out.println(l2);
 	  
 	        // Will add list l2 from 1 index
 	        l1.addAll(2, l2);
+	        l1.remove(l2);
 	        l2.addAll(0, l1);
 	        System.out.println(l2);
 	        System.out.println(l1);
@@ -61,6 +70,8 @@ public class ListInterface {
 	  
 	        // Again printing the updated List 1
 	        System.out.println(l1);
+	        
+	        
 	    }
 	
 	
