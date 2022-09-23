@@ -3,7 +3,7 @@ package LinkedListNodeCreation;
 public class LinkedList {
 	Node head;
 		
-	class Node{
+	static class Node{
 		
 		int data;
 		Node next;
