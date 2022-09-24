@@ -36,9 +36,11 @@ public class LinkedList1 {
 		list.head = new Node(1);
 		Node second = new Node(2);
 		Node third = new Node(3);
+		Node frth=new Node(4);
 
 		list.head.next = second;
 		second.next = third;
+		third.next=frth;
 
 		Node n = head;
 		printNode(n);
