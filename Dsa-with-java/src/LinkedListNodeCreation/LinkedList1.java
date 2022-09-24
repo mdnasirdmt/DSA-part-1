@@ -43,8 +43,7 @@ public class LinkedList1 {
 		Node n = head;
 		printNode(n);
 
-	}
-
+}
 }
 
 /*
@@ -62,4 +61,33 @@ public class LinkedList1 {
  * example of a linked list node with integer data. In Java or C#, LinkedList
  * can be represented as a class and a Node as a separate class. The LinkedList
  * class contains a reference of Node class type.
+ * 
+ * /* Three nodes have been allocated dynamically. We have references to these
+ * three blocks as head, second and third
+ * 
+ * llist.head second third | | | | | | +----+------+ +----+------+ +----+------+
+ * | 1 | null | | 2 | null | | 3 | null | +----+------+ +----+------+
+ * +----+------+
  */
+
+//llist.head.next=second; // Link first node with
+// the second node
+
+/*
+ * Now next of the first Node refers to the second. So they both are linked.
+ * 
+ * llist.head second third | | | | | | +----+------+ +----+------+ +----+------+
+ * | 1 | o-------->| 2 | null | | 3 | null | +----+------+ +----+------+
+ * +----+------+
+ */
+
+//second.next=third; // Link second node with the third node
+
+/*
+ * Now next of the second Node refers to third. So all three nodes are linked.
+ * 
+ * llist.head second third | | | | | | +----+------+ +----+------+ +----+------+
+ * | 1 | o-------->| 2 | o-------->| 3 | null | +----+------+ +----+------+
+ * +----+------+
+ */
+
