@@ -1,4 +1,4 @@
-package ArrayProblem;
+package revisionDsa;
 
 import java.util.*;
 
