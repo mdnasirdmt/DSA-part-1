@@ -1,6 +1,7 @@
 package collectionProblem;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -18,14 +19,17 @@ public class ArrayListProb {
 		list.add(Integer.valueOf('c'));
 		list.add(Integer.valueOf('d'));
 
-		System.out.println(list);
+		Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
 		Collections.sort(list);
+		System.out.println(list);
 
 		System.out.println(list.contains(100));
 		System.out.println(list.subList(2, arr.length - 1));
 		System.out.println(list.subList(0, 3));
 		System.out.println(list.get(10));
 		System.out.println(list.remove(7));
+		System.out.println(list);
 		System.out.println(list.remove(0));
 		System.out.println(list);
 		int in = Collections.binarySearch(list, 51); // it works when list is sorted
@@ -35,8 +39,9 @@ public class ArrayListProb {
 		System.out.println(index);
 
 		// Printing elements one by one
-		for (int i = 0; i < list.size(); i++)
-			System.out.print(list.get(i) + " ");
+		for (int i = 0; i < list.size(); i++) {
+//			System.out.print(list.get(i) + " ");
+		}
 
 	}
 
