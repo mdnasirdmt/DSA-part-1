@@ -15,9 +15,9 @@ public class StackClass {
 			s.add(i);
 			s1.add(i);
 		}
-
+		System.out.println("toString " + s.toString());
 		s.add(20);
-//		s.remove(1);
+		s.remove(1);
 
 		((Stack<Integer>) s).push(12);
 		s1.push(13);
@@ -25,8 +25,8 @@ public class StackClass {
 		((Stack<Integer>) s).pop();
 		s1.pop();
 
-		System.out.println(((Stack<Integer>) s).peek());
-		System.out.println(s1.peek());
+		System.out.println("peek s " + ((Stack<Integer>) s).peek());
+		System.out.println("peek s1 " + s1.peek());
 
 		System.out.println(s1.search(8));
 
@@ -34,7 +34,7 @@ public class StackClass {
 		s1.addAll(s);
 
 		System.out.println("toArray " + Arrays.toString(s.toArray()));
-		System.out.println("toWString " + s.toString());
+		System.out.println("toString " + s.toString());
 		System.out.println("aslist " + Arrays.asList(s1));
 		s1.trimToSize();
 		System.out.println("trim s1" + s1);
