@@ -11,7 +11,7 @@ public class BinarySearch {
 		int r = arr.length - 1;
 		int x = binaryKhoj(arr, l, r, khoj);
 
-		System.out.println("khoj value = "+x);
+		System.out.println("khoj value = " + x);
 	}
 
 	private static int binaryKhoj(int[] arr, int l, int r, int khoj) {
@@ -21,18 +21,18 @@ public class BinarySearch {
 		while (l <= r) {
 
 			if (arr[mid] == khoj) {
+				
 				return arr[mid];
-			}
-			else if(arr[mid]<khoj) {
 				
-				return binaryKhoj(arr, mid+1, r, khoj);
-				
-			}
-			else {
-				return binaryKhoj(arr, l, mid-1, khoj);
+			} else if (arr[mid] < khoj) {
+
+				return binaryKhoj(arr, mid + 1, r, khoj);
+
+			} else {
+				return binaryKhoj(arr, l, mid - 1, khoj);
 			}
 		}
-		
+
 		return mid;
 
 	}

@@ -3,7 +3,7 @@ package GeneralProblem;
 public class TableOfNum {
 
 	public static void main(String[] args) {
-		int n = 3;
+		int n =22;
 
 		for (int i = 1; i <= 10; i++) {
 
