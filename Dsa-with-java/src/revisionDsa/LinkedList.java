@@ -1,6 +1,5 @@
 package revisionDsa;
 
-
 public class LinkedList {
 
 	static Node head;
@@ -16,7 +15,7 @@ public class LinkedList {
 		}
 
 	}
-	
+
 //	static void printNode() {
 //		Node n= head;
 //		
@@ -27,36 +26,32 @@ public class LinkedList {
 //			
 //		}
 //	}
-	
-	
+
 	public static void main(String[] args) {
-		LinkedList ll= new LinkedList();
+		LinkedList ll = new LinkedList();
 		ll.head = new Node(1);
-		Node n2= new Node(2);
-		Node n3= new Node(3);
-		Node n4= new Node(4);
-		Node n5= new Node(5);
-		
-		
-		head.next= new Node(2);
-		
-		ll.head.next=n2;
-		n2.next=n3;
-		n3.next=n4;
-		n4.next=n5;
-		
-		
+		Node n2 = new Node(2);
+		Node n3 = new Node(3);
+		Node n4 = new Node(4);
+		Node n5 = new Node(5);
+
+		head.next = new Node(2);
+
+		ll.head.next = n2;
+		n2.next = n3;
+		n3.next = n4;
+		n4.next = n5;
+
 //		printNode();
-		Node n= head;
-		while(n!=null) {
+
+		Node n = head;
+		while (n != null) {
 //			
-			System.out.print(n.data+" ");
-			n=n.next;
+			System.out.print(n.data + " ");
+			n = n.next;
 //			
 		}
-		
 
 	}
 
 }
-
