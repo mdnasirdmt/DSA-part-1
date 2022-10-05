@@ -20,7 +20,7 @@ import lombok.Setter;
 public class Book {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	Integer bookId;
 	String name;
 	String author;

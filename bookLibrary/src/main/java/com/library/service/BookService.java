@@ -15,5 +15,7 @@ public interface BookService {
 	public Book updateBook(Book book, Integer id);
 
 	public String deleteBook(Integer id);
+	
+	public List<Book> findByAuthor(String author);
 
 }
