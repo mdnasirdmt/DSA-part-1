@@ -41,7 +41,7 @@ public class UserController {
 	@GetMapping("/{id}")
 	public User getUserById(@PathVariable(value = "id") Integer id) {
 		return userRepository.findById(id)
-				.orElseThrow(() -> new ResourceNotFound("user not found by this id to display" + id));
+				.orElseThrow(() -> new ResourceNotFound("user not found by this id to display " + id));
 
 	}
 
