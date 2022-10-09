@@ -3,31 +3,30 @@ package com.masai.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.masai.entity.Comment;
 import com.masai.entity.Post;
-import com.masai.service.PostService;
+import com.masai.service.CommentService;
 
+@RequestMapping("/api/comments")
 @RestController
-@RequestMapping("/api/posts")
-public class PostController {
+public class CommentController {
 
 	@Autowired
-	private PostService postService;
+	private CommentService commentService;
 
-	// create post api // http://localhost:8080/api/posts
+	// create post api // http://localhost:8080/api/comments
 	@PostMapping
-	public ResponseEntity<Post> savePost(@RequestBody Post post) {
-		
-		return new ResponseEntity<Post>(postService.createPost(post), HttpStatus.CREATED);
+	public ResponseEntity<Comment> savePost(@RequestBody Comment comment) {
+
+		return new ResponseEntity<Comment>(commentService.createComment(comment), HttpStatus.CREATED);
 
 	}
 	
 	
+
 }
