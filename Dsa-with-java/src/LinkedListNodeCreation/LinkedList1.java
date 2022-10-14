@@ -1,6 +1,5 @@
 package LinkedListNodeCreation;
 
-import java.util.Arrays;
 
 public class LinkedList1 {
 
@@ -31,14 +30,14 @@ public class LinkedList1 {
 
 	public static void main(String[] args) {
 
-		LinkedList1 list = new LinkedList1();
+//		LinkedList1 list = new LinkedList1();
 
-		list.head = new Node(1);
+		LinkedList1.head = new Node(1);
 		Node second = new Node(2);
 		Node third = new Node(3);
 		Node frth=new Node(4);
 
-		list.head.next = second;
+		LinkedList1.head.next = second;
 		second.next = third;
 		third.next=frth;
 
