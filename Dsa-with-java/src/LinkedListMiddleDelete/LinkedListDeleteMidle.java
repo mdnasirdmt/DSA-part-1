@@ -1,7 +1,5 @@
 package LinkedListMiddleDelete;
 
-import java.util.Arrays;
-import java.util.LinkedList;
 
 public class LinkedListDeleteMidle {
 
@@ -43,6 +41,8 @@ public class LinkedListDeleteMidle {
 
 	}
 
+	
+	/// to delte node
 	private static void deleteMiddleNode(Node node) {
 		// first finding length of Linkedlist
 		Node cur = head;
@@ -76,6 +76,8 @@ public class LinkedListDeleteMidle {
 
 	}
 
+	
+	// to print nodes
 	private static void printNode(Node n) {
 		String bag = "";
 		while (n != null) {
