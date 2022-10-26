@@ -16,7 +16,7 @@ public class PrintWriterClass {
 		out.println(true);
 		out.println('c');
 		out.println("amit");
-//		out.flush(); // need not call the flush method
+		out.flush(); // need not call the flush method
 		out.close();
 		System.out.println("done..");
 
