@@ -1,12 +1,9 @@
 package seraializableConcept;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+
 import java.io.ObjectOutputStream;
-import java.io.OutputStream;
 import java.io.Serializable;
 
 public class SerailaizeInterface implements Serializable {
@@ -18,15 +15,15 @@ public class SerailaizeInterface implements Serializable {
 	}
 
 	public static void main(String[] args) throws Exception {
-		
-		SerailaizeInterface si= new SerailaizeInterface();
-		
-		FileOutputStream fis= new FileOutputStream("abc1.txt");
-		
-		ObjectOutputStream oos= new ObjectOutputStream(fis);
-		
+
+		SerailaizeInterface si = new SerailaizeInterface();
+
+		FileOutputStream fis = new FileOutputStream("abc1.txt");
+
+		ObjectOutputStream oos = new ObjectOutputStream(fis);
+
 		oos.writeObject(si);
-		
+
 		oos.close();
 		System.out.println("si object is serailized");
 	}
