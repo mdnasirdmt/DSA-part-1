@@ -1,22 +1,15 @@
 package seraializableConcept;
 
-
 import java.io.FileOutputStream;
 
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class SerailaizeInterface implements Serializable {
-
-	int i = 10;
-
-	void fun1() {
-		System.out.println("inside fun1 ");
-	}
+public class SerailaizeInterface {
 
 	public static void main(String[] args) throws Exception {
 
-		SerailaizeInterface si = new SerailaizeInterface();
+		Serialize si = new Serialize();
 
 		FileOutputStream fis = new FileOutputStream("abc1.txt");
 
@@ -26,5 +19,13 @@ public class SerailaizeInterface implements Serializable {
 
 		oos.close();
 		System.out.println("si object is serailized");
+	}
+}
+
+class Serialize implements Serializable {
+	int i = 10;
+
+	void fun1() {
+		System.out.println("inside fun1 ");
 	}
 }
