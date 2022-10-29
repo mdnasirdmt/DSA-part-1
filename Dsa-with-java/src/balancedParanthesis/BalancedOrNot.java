@@ -1,7 +1,5 @@
 package balancedParanthesis;
 
-import java.util.Stack;
-
 public class BalancedOrNot {
 
 	public static void main(String[] args) {
