@@ -16,10 +16,9 @@ public class MultiThreadingByThreadClass {
 
 class ThreadClass extends Thread {
 
-	@Override
 	public void run() {
 		for (int i = 0; i < 3; i++)
-			System.out.println("hello thread " + i);
+			System.out.println("hello custome thread " + i);
 	}
 
 }
