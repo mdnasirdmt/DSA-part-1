@@ -25,18 +25,17 @@ public class HashMapObject {
 			}
 		}
 //		System.out.println(hm);
-		
-		
+
 //		TreeMap<Character, Integer> tm= new TreeMap<Character, Integer>(hm);
 //		System.out.println(tm);
-		
-		Set<Map.Entry<Character, Integer>> entries= hm.entrySet();
+
+		Set<Map.Entry<Character, Integer>> entries = hm.entrySet();
 //		System.out.println(entries);
-		
+
 //		System.out.println(entries.toString());
-		
-		for(Map.Entry<Character, Integer> ent:entries){
-			System.out.println(ent.getKey()+ "-> "+ ent.getValue());
+
+		for (Map.Entry<Character, Integer> ent : entries) {
+			System.out.println(ent.getKey() + "-> " + ent.getValue());
 		}
 
 	}
