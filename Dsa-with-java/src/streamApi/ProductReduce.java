@@ -28,15 +28,21 @@ public class ProductReduce {
 		productList.add(new ProductReduce("onePluse", 30000));
 		productList.add(new ProductReduce("leneovo", 15000));
 
-		// using collectors
+		// using collectors total price
 		double totalPrice = productList.stream().collect(Collectors.summingDouble(product -> product.price));
-
 		System.out.println(totalPrice);
 
-		// using reduce
+		// using reduce total price
 		double tprice = productList.stream().map(product -> product.price).reduce(0.0, (sum, price) -> sum + price);
-
 		System.out.println(tprice);
+		
+		
+		//max price
+		ProductReduce p1=productList.stream().max((product1,product2)-> product1.price>product2.price?1:-1).get();
+		System.out.println(p1.price);
+		
+		//min price
+		
 
 	}
 
