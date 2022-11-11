@@ -42,7 +42,8 @@ public class ProductReduce {
 		System.out.println(p1.price);
 		
 		//min price
-		
+		ProductReduce p2= productList.stream().min((product1,product2)-> product1.price>product2.price?1:-1).get();
+		System.out.println(p2.price);
 
 	}
 
