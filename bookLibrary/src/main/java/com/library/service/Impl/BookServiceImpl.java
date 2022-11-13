@@ -1,8 +1,6 @@
 package com.library.service.Impl;
 
 import java.util.List;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -59,6 +57,12 @@ public class BookServiceImpl implements BookService {
 		bookRepository.deleteById(id);
 
 		return "book deleted successfully !";
+	}
+
+	@Override
+	public List<Book> findByAuthor(String author) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

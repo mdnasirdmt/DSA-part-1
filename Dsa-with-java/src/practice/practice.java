@@ -73,21 +73,21 @@ public class practice {
 //		while (true);
 ////		System.out.println("After Loop");
 
-		System.out.println("Hello World");
-		int limit = 25;
-		int sum = 60;
-		double randomValue = 2.77;
-
-		int c = 0;
-		for (int var = 1; var < limit; var = var + 3) {
-			c++;
-			System.out.println(c);
-			System.out.println("randomValue: " + randomValue);
-			for (int j = 1; j < limit; j = j + 2) {
-				sum++;
-			}
-			System.out.println("Sum = " + sum);
-		}
+//		System.out.println("Hello World");
+//		int limit = 25;
+//		int sum = 60;
+//		double randomValue = 2.77;
+//
+//		int c = 0;
+//		for (int var = 1; var < limit; var = var + 3) {
+//			c++;
+//			System.out.println(c);
+//			System.out.println("randomValue: " + randomValue);
+//			for (int j = 1; j < limit; j = j + 2) {
+//				sum++;
+//			}
+//			System.out.println("Sum = " + sum);
+//		}
 
 	}
 
