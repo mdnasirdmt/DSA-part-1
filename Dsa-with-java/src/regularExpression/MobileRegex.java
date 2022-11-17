@@ -1,18 +1,22 @@
 package regularExpression;
-import java.util.*;
-import java.util.regex.Matcher;
+
+import java.util.Scanner;
 import java.util.regex.Pattern;
+
 public class MobileRegex {
 
 	public static void main(String[] args) {
+		Scanner s= new Scanner(System.in);
+		System.out.println("enter mobile number ");
+		String mob= s.next();
+		boolean p= Pattern.matches("[6789]{1}[0-9]{9}", mob);
 		
-		Pattern p= Pattern.compile("nasir");
-		Matcher m= p.matcher("anasirbnasircnasir");
-		
-//		System.out.println(m.find(1));
-		while(m.find()) {
-			System.out.println(m.start()+ "  "+m.end()+"  "+m.group());
+		if(p==false) {
+			System.out.println("invalid mobile number ");
 		}
+		
+		
+		System.out.println(Pattern.matches("[789][0-9]{9}", "9953038949"));//true
 
 	}
 
