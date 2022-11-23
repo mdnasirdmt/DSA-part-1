@@ -17,7 +17,7 @@ public class Comparator {
 		list.add(new Students(2, "lkaj", "haranaya"));
 		
 		Collections.sort(list, new SortByRoll());
-		Collections.sort(list, new SortByName());
+//		Collections.sort(list, new SortByName());
 		System.out.println(list.toString());
 		
 	}
