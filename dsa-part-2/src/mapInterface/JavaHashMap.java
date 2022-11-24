@@ -11,10 +11,10 @@ public class JavaHashMap {
 
 		HashMap<Integer, String> hm = new HashMap<>();
 
-		hm.put(1, "abc");
 		hm.put(2, "def");
 		hm.put(3, "abc");
 		hm.put(4, "ghi");
+		hm.put(1, "abc");
 		hm.put(4, "pqr");
 		
 		Set<Map.Entry<Integer, String>> eSet = hm.entrySet();
