@@ -6,7 +6,7 @@ public class javaHashMapObject {
 
 	public static void main(String[] args) {
 
-		Integer[] arr = { 101, 501, 201, 301, 401, 501, 201, 101, 301, 101 };
+		Integer[] arr = { 501,101, 501, 201, 301, 401, 501, 201, 101, 301, 101 };
 
 		HashMap<Integer, Integer> hm = new HashMap<>();
 

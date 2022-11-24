@@ -20,7 +20,7 @@ public class JavaLinkedHashMap {
 //		lhm.replace("abc", 1, 7);
 //		System.out.println(lhm);
 		
-		String[] str= {"a","b","c","d","b","a","c"};
+		String[] str= {"b","c","a","b","d","a","c"};
 		LinkedHashMap<String, Integer> lhm2= new LinkedHashMap<>();
 		for(int i=0;i<str.length; i++) {
 			
