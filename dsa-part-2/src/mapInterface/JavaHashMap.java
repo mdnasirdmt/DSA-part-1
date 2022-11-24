@@ -46,7 +46,8 @@ public class JavaHashMap {
 		Collection<String> value=	hm.values();
 		System.out.println(value);
 
-//		
+		hm.remove(4);
+		System.out.println(hm);
 
 	}
 
