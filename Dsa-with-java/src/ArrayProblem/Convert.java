@@ -22,12 +22,12 @@ public class Convert {
 		// 2nd approuch
 		int[] arr = new int[2];
 
-//		int r1=n%10;
-//		int d1=n/10;
+		int d1=n/10;
+		int r1=n%10;
 		arr[0] = n / 10;
 		arr[1] = n % 10;
-//		System.out.println(r1);
-//		System.out.println(d1);
+		System.out.println(d1);
+		System.out.println(r1);
 		System.out.println(Arrays.toString(arr));
 
 	}
