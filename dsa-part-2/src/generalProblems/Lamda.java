@@ -15,7 +15,7 @@ public class Lamda {
 		};
 		intr.fun("nasir");
 		
-		
+		////
 		Intr1 i1= ()->{
 			return 10*2;
 		};
