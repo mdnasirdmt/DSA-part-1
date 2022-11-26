@@ -8,6 +8,7 @@ public class SortTwoArray {
 
 		int[] arr1 = { 1, 2, 3 };
 		int n1 = arr1.length;
+		
 		int[] arr2 = { 2, 5, 6 };
 		int n2 = arr2.length;
 
