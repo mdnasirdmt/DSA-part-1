@@ -34,7 +34,7 @@ public class StreamApi2 {
 		students.stream().forEach(s -> System.out.println(s.name + " " + s.id));
 		students.stream().filter(s-> s.getId()>103).forEach(s->System.out.println(s.getName()));
 		
-		students.stream().filter(s->s.getId()>101).collect(Collectors.toList());
+		students.stream().filter(s->s.getId()>101).map(s->s.id).collect(Collectors.toList());
 
 	}
 

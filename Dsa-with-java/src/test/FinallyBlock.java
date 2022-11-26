@@ -5,6 +5,7 @@ public class FinallyBlock {
 		try {
 			System.out.println("I am in try block");
 			System.exit(2);
+//			return;
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		} finally {

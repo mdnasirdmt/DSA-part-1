@@ -4,7 +4,7 @@ public class PalindromOrNotInteger {
 
 	public static void main(String[] args) {
 
-		int n = 121;
+		int n = 111;
 
 		palindrom(n);
 
@@ -12,16 +12,16 @@ public class PalindromOrNotInteger {
 
 	private static void palindrom(int n) {
 
-		int n1 = n, rem = 0, num = 0;
+		int n1 = n, rem = 0, rev = 0;
 
 		while (n > 0) {
 
-			rem = n % 10;
-			num = num * 10 + rem;
+//			rem = n % 10;
+			rev = rev * 10 + n%10;
 			n = n / 10;
 		}
 
-		if (n1 == num) {
+		if (n1 == rev) {
 			System.out.println("yes");
 		} else {
 			System.out.println("no");

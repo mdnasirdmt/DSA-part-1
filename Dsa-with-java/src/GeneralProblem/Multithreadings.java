@@ -6,7 +6,7 @@ public class Multithreadings {
 		// TODO Auto-generated method stub
 
 		mulTit m = new mulTit();
-		Thread t1 = new Thread(m);
+//		Thread t1 = new Thread(m);
 
 		m.start();
 
