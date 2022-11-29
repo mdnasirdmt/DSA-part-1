@@ -8,13 +8,13 @@ public class Main {
 //		o1.f1(new String("Nemisa"));
 //		o1.f1(new StringBuffer("hq"));
 		
-		a.f1(new StringBuilder("nimesha"));
+//		a.f1(new StringBuilder("nimesha"));
 
 //		Integer a=10; //ArithmeticException
-//		Integer a= null; // NullPointerException:
-//		Integer b=0;
-//		Integer c= a/b;
-//		System.out.println(c);
+		Integer a= null; // NullPointerException:
+		Integer b=10;
+		Integer c= a/b;
+		System.out.println(c);
 		
 	
 	}
@@ -54,16 +54,3 @@ class b extends a {
 	}
 }
 
-//abstract class A {
-//	public abstract void method1();
-//
-//	protected abstract void  method2() {
-//		  System.out.println("method2");
-//		  }
-//
-//	abstract void method3();
-//
-//	private void method4() {
-//		System.out.println(" method4");
-//	}
-//}
