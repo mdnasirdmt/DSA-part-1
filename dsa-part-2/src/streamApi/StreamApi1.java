@@ -18,7 +18,7 @@ public static void main(String[] args) {
 //		students.stream().forEach(m-> System.out.println(m.marks));
 		System.out.println(students.stream().filter(m-> m.marks>800).map(m->m.marks).collect(Collectors.toList()));
 		
-		students.stream().filter(m-> m.marks>800).forEach(m-> System.out.println(m.name));
+		students.stream().filter(m-> m.marks>800).forEach(m-> System.out.println(m.name+" "+ m.roll));
 		int sum=students.stream().map(s-> s.marks).reduce(0,(ans,i)->ans+i);
 		System.out.println(sum);
 		
