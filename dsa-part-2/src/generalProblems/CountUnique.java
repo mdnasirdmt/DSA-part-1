@@ -13,8 +13,8 @@ public class CountUnique {
 		for (int i = 1; i < nums.length; i++) {
 			
 			if(nums[i-1]!=nums[i]) {
+//				nums[j]=nu  ms[i];
 				j++;
-				nums[j]=nums[i];
 			}
 			
 		}
