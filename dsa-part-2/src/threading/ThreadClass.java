@@ -12,9 +12,8 @@ public class ThreadClass extends Thread {
 
 	public static void main(String[] args) {
 
-		ThreadClass th = new ThreadClass();
+		ThreadClass t1 = new ThreadClass();
 
-		Thread t1 = new Thread(th);
 
 		t1.start();
 
