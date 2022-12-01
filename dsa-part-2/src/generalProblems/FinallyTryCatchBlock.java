@@ -10,9 +10,13 @@ public class FinallyTryCatchBlock {
 			int z = 0;
 
 			System.out.println("x  y  z   value is " + x + " ," + y + " ," + z);
-			System.exit(1);  // at this point finally block will not execute 
+
+			System.exit(1); // at this point finally block will not execute
+
 			z = x / y;
+
 			System.out.println("z value is " + z);
+
 		} catch (Exception e) {
 			System.out.println("catch block ");
 		} finally {
