@@ -17,6 +17,11 @@ public class SortSelection {
 				if (arr[j] < arr[min]) {
 					min = j;
 				}
+				
+//				if (arr[min] < arr[j]) {  if we uncomment this if condition and comment above if condition
+//										  then it will give reverse sorted array
+//					min = j;
+//				}
 			}
 			int t = arr[min];
 			arr[min] = arr[i];
