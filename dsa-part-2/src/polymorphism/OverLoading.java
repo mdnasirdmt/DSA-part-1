@@ -1,25 +1,23 @@
 package polymorphism;
 
 public class OverLoading {
-	
+
 	void methode(String str) {
-		System.out.println("methode "+ str);
+		System.out.println("methode " + str);
 	}
-	
-	static int methode(int a,int b){
-		return a+b;
-	} 
-	
-	
+
+	static int methode(int a, int b) {
+		return a + b;
+	}
 
 	public static void main(String[] args) {
+
+		OverLoading ol = new OverLoading();
 		
-		OverLoading ol= new OverLoading();
-		ol.methode(1,2);
+		System.out.println(ol.methode(1, 2));
+		
 		ol.methode("welcome");
 
 	}
-	
-	
 
 }
