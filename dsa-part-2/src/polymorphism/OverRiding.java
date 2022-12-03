@@ -8,6 +8,7 @@ public class OverRiding {
 //		System.out.println(c1.method(10));
 //		c1.childFun();
 //		c1.parrentFun();
+		
 
 		Parrent p1 = new Parrent();
 //		System.out.println(p1.method(5));
@@ -16,6 +17,7 @@ public class OverRiding {
 		Parrent p2 = new Child();
 //		System.out.println(p2.method(5));
 //		p2.parrentFun();
+		
 
 		Child c2 = (Child) p2;
 		Child c3 = (Child) c1;
@@ -45,6 +47,8 @@ class Parrent {
 	void parrentFun() {
 		System.out.println("Parrent fun method");
 	}
+
+	
 }
 
 class Child extends Parrent {
