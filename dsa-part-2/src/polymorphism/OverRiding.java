@@ -4,25 +4,28 @@ public class OverRiding {
 
 	public static void main(String[] args) {
 
-		Riding riding = new Riding();
-//		System.out.println(riding.method(10));
-		riding.ridingFun();
+		Child c1 = new Child();
+//		System.out.println(c1.method(10));
+//		c1.childFun();
+//		c1.parrentFun();
 
-		Test test = new Test();
-//		test.method(5);
-//		test.testFun();
+		Parrent p1 = new Parrent();
+//		System.out.println(p1.method(5));
+//		p1.parrentFun();
 
-		Test test2 = new Riding();
-//		test2.method(15);
-//		test2.testFun();
+		Parrent p2 = new Child();
+//		System.out.println(p2.method(5));
+//		p2.parrentFun();
 
-		Riding riding2 = (Riding) test2;
-		Riding riding3 = (Riding) riding;
-		riding2.ridingFun(); // specific method of child class by type casting
-		riding3.ridingFun(); // specific method of child class by type casting
+		Child c2 = (Child) p2;
+		Child c3 = (Child) c1;
+//		c2.childFun(); // specific method of child class by type casting
+//		c3.childFun(); // specific method of child class by type casting
 
-//		riding2.testFun();
-//		riding3.testFun();
+//		System.out.println(c2.method(5));
+//		c2.parrentFun();
+//		c3.childFun();
+//		c3.method(10);
 
 //		Riding riding2= new Test(); //Type mismatch: cannot convert from Test to Riding
 
@@ -30,31 +33,31 @@ public class OverRiding {
 
 }
 
-class Test {
+class Parrent {
 
 	int method(int i) {
 
-		System.out.println("Test method ");
+		System.out.println("Parrent method ");
 
 		return i + 10;
 	}
 
-	void testFun() {
-		System.out.println("test fun method");
+	void parrentFun() {
+		System.out.println("Parrent fun method");
 	}
 }
 
-class Riding extends Test {
+class Child extends Parrent {
 
 	int method(int i) {
 
-		System.out.println("Riding method ");
+		System.out.println("Child method ");
 
 		return i + 20;
 	}
 
-	void ridingFun() {
-		System.out.println("riding specific  fun method");
+	void childFun() {
+		System.out.println("Child specific  fun method");
 	}
 
 }
