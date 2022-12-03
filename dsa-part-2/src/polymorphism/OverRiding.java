@@ -53,7 +53,7 @@ class Riding extends Test {
 		return i + 20;
 	}
 
-	void fun() {
+	void ridingFun() {
 		System.out.println("riding specific  fun method");
 	}
 
