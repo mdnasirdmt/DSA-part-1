@@ -10,7 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,6 +26,7 @@ public class Student {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer roll;
 	private String name;
+	private Integer marks;
 	private String mob;
 
 	@ManyToMany(cascade = CascadeType.ALL, mappedBy = "students")
