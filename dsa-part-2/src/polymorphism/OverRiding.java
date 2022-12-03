@@ -6,7 +6,7 @@ public class OverRiding {
 
 		Riding riding = new Riding();
 //		System.out.println(riding.method(10));
-//		riding.fun();
+		riding.ridingFun();
 
 		Test test = new Test();
 //		test.method(5);
@@ -18,8 +18,8 @@ public class OverRiding {
 
 		Riding riding2 = (Riding) test2;
 		Riding riding3 = (Riding) riding;
-//		riding2.fun();  // specific method of child class by type casting
-//		riding3.fun();	// specific method of child class by type casting
+		riding2.ridingFun(); // specific method of child class by type casting
+		riding3.ridingFun(); // specific method of child class by type casting
 
 //		riding2.testFun();
 //		riding3.testFun();
