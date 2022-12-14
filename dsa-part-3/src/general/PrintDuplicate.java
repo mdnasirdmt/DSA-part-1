@@ -11,7 +11,7 @@ public class PrintDuplicate {
 
 	public static void main(String[] args) {
 
-		ArrayList<Integer> al = new ArrayList<>(Arrays.asList(5,5,2,2, 2, 3, 2, 4, 3, 1, 5, 6, 6, 7, 8,8,8));
+		ArrayList<Integer> al = new ArrayList<>(Arrays.asList(5, 5, 2, 2, 2, 3, 2, 4, 3, 1, 5, 6, 6, 7, 8, 8, 8));
 		int[] arr = { 5, 2, 3, 2, 4, 3, 1, 5, 6, 6, 7, 8 };
 		HashMap<Integer, Integer> hm = new HashMap<>();
 
@@ -41,13 +41,13 @@ public class PrintDuplicate {
 
 //		System.out.println(al);
 		System.out.println(hm);
-		
-		Set<Map.Entry<Integer, Integer>> entry= hm.entrySet();
-		
-		for(Map.Entry<Integer, Integer> i :entry){
-			
-			if(i.getValue()>1) {
-				System.out.println(i.getKey()+"="+ i.getValue());
+
+		Set<Map.Entry<Integer, Integer>> entry = hm.entrySet();
+
+		for (Map.Entry<Integer, Integer> i : entry) {
+
+			if (i.getValue() > 1) {
+				System.out.println(i.getKey() + "=" + i.getValue());
 			}
 		}
 
