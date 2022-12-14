@@ -17,7 +17,7 @@ public class CountUnique {
 				j++;
 
 		}
-		System.out.println("\n" + j);
+		System.out.println(j);
 
 	}
 
