@@ -6,8 +6,8 @@ public class CountUnique {
 
 	public static void main(String[] args) {
 
-		int[] arr = { 1, 1,1, 2, 2, 3, 3, 3, 4, 5, 6, 7, 8,7,6 };
-		
+		int[] arr = { 1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 6, 7, 8, 7, 6 };
+
 		Arrays.sort(arr);
 
 		int j = 1;
@@ -17,9 +17,7 @@ public class CountUnique {
 				j++;
 
 		}
-		System.out.println(j);
-		
-		
+		System.out.println("\n" + j);
 
 	}
 
