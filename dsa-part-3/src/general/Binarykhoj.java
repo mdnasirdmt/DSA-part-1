@@ -1,20 +1,26 @@
 package general;
 
+import java.util.Arrays;
+
 public class Binarykhoj {
 
 	public static void main(String[] args) {
 
-		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
+//		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
 //		int[] arr = {  };
+
+		int[] arr = { 8, 7, 6, 5, 4, 3, 2, 1 };
+
+		Arrays.sort(arr);
 
 		int find = 8;
 
 		int l = 0, r = arr.length - 1;
 
 		int n = binarykhoj(arr, l, r, find);
-		
+
 //		System.out.println(n);
-		
+
 		if (n == -1)
 			System.out.println("not found");
 		else
