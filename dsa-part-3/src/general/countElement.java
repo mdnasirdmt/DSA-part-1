@@ -3,7 +3,7 @@ package general;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class countDuplicate {
+public class countElement {
 
 	public static void main(String[] args) {
 		
