@@ -4,7 +4,7 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 
-		int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
+		int[] arr = { 1, 3, 2, 4, 5, 6, 7 };
 
 		int left = 0, right = arr.length - 1, k = 7;
 
