@@ -1,5 +1,7 @@
 package generalProblems;
 
+import java.util.Arrays;
+
 public class RemoveDuplicateFromArray {
 
 	public static void main(String[] args) {
@@ -21,9 +23,9 @@ public class RemoveDuplicateFromArray {
 		for (int i = 0; i < arr.length; i++) {
 
 			freq[arr[i]]++;
-
-//			System.out.println(freq[arr[i]]);
+//			System.out.print(freq[arr[i]]+" ");
 		}
+//			System.out.println(Arrays.toString(freq));
 
 		for (int i = 0; i < freq.length; i++) {
 

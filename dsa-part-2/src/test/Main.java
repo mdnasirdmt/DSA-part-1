@@ -4,11 +4,11 @@ public class Main {
 
 	public static void main(String[] args) {
 
-//		a o1= new a();
+		a o1= new a();
 
 //		a o2 = new b();
 		
-		System.out.println("b");
+//		System.out.println("b");
 		
 		
 
