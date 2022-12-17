@@ -17,7 +17,7 @@ public class JavaArrayList {
 //		System.out.println(list.contains(12));
 //		System.out.println(list.subList(1, 5));
 		System.out.println(list.subList(0, 6));
-		
+		list.sort(null);
 		
 
 	}

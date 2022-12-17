@@ -9,9 +9,12 @@ public class ThreadRunnable implements Runnable{
 		Thread t1= new Thread(th);
 		t1.start();
 		
+		System.out.println(t1.getState());
+		
 		for(int i=1;i<=3;i++) {
 			System.out.println("thread main "+i);
 		}
+		System.out.println(t1.getState());
 
 	}
 
@@ -21,6 +24,7 @@ public class ThreadRunnable implements Runnable{
 		for(int i=1;i<=3;i++) {
 			System.out.println("thread runnable "+i);
 		}
+		
 	}
 
 }

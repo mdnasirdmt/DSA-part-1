@@ -6,12 +6,17 @@ public class Main {
 
 //		a o1= new a();
 
-		a o2 = new b();
+//		a o2 = new b();
+		
+		System.out.println("b");
 		
 		
 
 
 
+	}
+	public static void main(char[] args) {
+		System.out.println("c");
 	}
 
 }
