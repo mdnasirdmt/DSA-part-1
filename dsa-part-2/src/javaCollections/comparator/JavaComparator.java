@@ -11,6 +11,7 @@ public class JavaComparator {
 		ArrayList<Student> list = new ArrayList<>();
 
 		list.add(new Student(201, "Nasir", 450));
+		list.add(new Student(201, "Nasir", 450));
 		list.add(new Student(101, "Amit", 550));
 		list.add(new Student(401, "Nasir", 450));
 		list.add(new Student(201, "shahrukh", 600));
