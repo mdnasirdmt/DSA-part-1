@@ -13,15 +13,25 @@ public class EvenWithoutModulus {
 
 		//////////////
 
-		boolean f = true;
-
-		for (int i = 1; i <= x; i++) {
-			
-			f=!f;
-
-		}
-		if(f) {
+//		boolean f = true;
+//
+//		for (int i = 1; i <= x; i++) {
+//			
+//			f=!f;
+//
+//		}
+//		if(f) {
+//			System.out.println("even");
+//		}else {
+//			System.out.println("odd");
+//		}
+		
+		/////////////
+		
+		
+		if(x%2==0) {
 			System.out.println("even");
+			
 		}else {
 			System.out.println("odd");
 		}
