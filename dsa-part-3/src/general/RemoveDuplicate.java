@@ -6,8 +6,8 @@ public class RemoveDuplicate {
 
 	public static void main(String[] args) {
 
-//		int[] arr = { 2, 1, 1, 3, 3, 2, 2, 3, 5, 4, 6, 4 };
-		int[] arr = { 20, 10, 20, 70, 30, 60, 50, 20, 30, 30 };
+		int[] arr = { 2, 1, 1, 3, 3, 2, 2, 3, 5, 4, 6, 4 };  //1 2 3 4 5 6 
+//		int[] arr = { 20, 10, 20, 70, 30, 60, 50, 20, 30, 30 }; //10 20 30 50 60 70 
 
 		int m = 0;
 
